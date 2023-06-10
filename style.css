@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+:root{
+    --Primary-Color: #774936; /*Brown*/
+    --Background-Color: #F5F5F5; /*(Light Gray)*/
+    --Background-color-black: #2B2B2D;
+    --Accent-Color: #FFC107; /*(Amber)*/
+    --default-color: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    font-family: 'Open Sans', sans-serif;        
+}
+
+body {    
+    height: 100vh;
+    margin: 0 auto;
+    background-color: var(--Background-color-black) ;
+
+}
+h1, h2, p {
+    color: var(--default-color);
+}
+header {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto; 
+
+    background: url("./Images/bhurj_1920_700.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.95;
+
+}
+.nav-wrapper {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+
+    /*background-color: #1190CD;*/
+
+}
+
+.nav-list {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list-item {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.button-content {
+    display: flex;
+    gap: 10px;
+}
+header > h1 { 
+    font-size: 3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 100px 0 0 0;
+}
+
+header > p {
+    max-width: 1000px;  
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 25px 0 50px 0;
+    line-height: 25px;
+}
+main {
+    
+}
+.sell-section, .buy-section {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+}
+.sell-section-text, .buy-section-text {
+    width: 50vw;
+    text-align: center;
+}
+.sell-section>img, .buy-section>img{
+    width: 500px;
+    height: 350px;
+}
+
+.investment-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.investment-section-text {
+    text-align: center;
+}
+
+.investment-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 20px;
+}
+  
+.investiment-house { 
+    transition: all .3s; 
+}
+
+.investiment-house:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    
+}
+
+.investiment-house > img {
+    width: 400px;
+    height: 350px;
+    border-radius: 15px;
+
+}
