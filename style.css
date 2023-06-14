@@ -112,8 +112,12 @@ header img {
     margin: 25px 0 50px 0;
     line-height: 25px;
 }
-
-.sell-section, .buy-section {
+.buy-section-images {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+}
+.sell-section, .buy-section-wrapper {
     display: flex;
     align-items: center;    
     justify-content: center;
@@ -124,7 +128,7 @@ header img {
     width: 50vw;
     text-align: center;
 }
-.sell-section img, .buy-section img{
+.sell-section img{
     width: 500px;
     height: 350px;
 }
@@ -135,7 +139,9 @@ header img {
     align-items: center; 
     justify-content: center;
 }
-
+.investment-section button {
+    margin-top: 30px;    
+}
 .investment-section-text {
     text-align: center;
 }
@@ -169,11 +175,34 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 300px;
+    height: 400px;
     position: relative;
+
+    text-align: center;
+   
+}
+
+footer h1{
+    width: 50vw;
+}
+
+footer h4 {
+    width: 40vw;
+    font-size: 1rem;
 }
 
 
+.copy-content {
+    width: 100vw;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d6efd;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+}
 
 .social-logos {
     display: flex;
@@ -197,7 +226,7 @@ footer {
 
 #modal-btn {    
     position: fixed; 
-    bottom: 20px;
+    bottom: 30px;
     right: 20px;
 
     width: 60px;
@@ -206,16 +235,43 @@ footer {
 
     transition: all .3s; 
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.message-logo {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;    
+    gap: 5px; 
+    padding: 5px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
 }
-#modal-btn span {    
-    width: 30px;
-    height: 3px;
+.message-logo span { 
+    width: 25px;
+    height: 3px;    
     color: #fff;
     background-color: #ffffff;
     border-radius: 15px;
 }
 
+.email-address-wrapper {
+    width: 40vw;
+    margin-top: 30px;
+}
+
+.email-address-wrapper span {
+    background-color: #2B2B2D;
+    color: #fff;
+}
+
+#email-address-input {
+    background-color: #2B2B2D;
+}
+#email-address-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
